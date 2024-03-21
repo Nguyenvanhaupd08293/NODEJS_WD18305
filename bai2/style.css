@@ -1,0 +1,82 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    width: 80%;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: red;
+}
+
+select {
+    color: #fff;
+    width: 30%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #3e17d3;
+}
+
+input[type="submit"] {
+    width: 11%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e4e9ef;
+    color: #3872e0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: red;
+    color: #fff;
+}
+
+#plateNumber {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#citySelect {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+#selectForm {
+    display: grid;
+}
+
+#selectForm {
+    display: flex;
+    flex-direction: column;
+    /* Định hướng các phần tử con thành cột */
+    align-items: center;
+    /* Căn giữa theo chiều ngang */
+}
+
+#citySelect {
+    width: 200px;
+    /* Độ rộng của dropdown select */
+    margin-bottom: 10px;
+    /* Khoảng cách giữa dropdown select và nút Submit */
+}

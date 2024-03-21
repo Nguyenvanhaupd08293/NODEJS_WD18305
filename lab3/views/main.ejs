@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <%- include('layouts/navbar'); %>
+        <%- include('layouts/header'); %>
+            <main align="center">
+                <h1>Chào Mừng bạn ghé thăm website</h1>
+                <% if (kindOfDay === 'Chủ nhật' || kindOfDay === 'Thứ bảy') { %>
+                    <h2>Hôm nay là cuối tuần</h2>
+                    <% } else { %>
+                        <h2>Hôm nay là
+                            <%= kindOfDay %>
+                        </h2>
+                        <% } %>
+            </main>
+</body>
+
+</html>
